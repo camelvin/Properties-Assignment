@@ -7,11 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Appliance.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-    }
+        Appliance *firstProduct =[[Appliance alloc]init];
+       [firstProduct setProdctname:@"Oven"];
+        [firstProduct setVault:35];
+        
+        [firstProduct product];
+        [firstProduct voltage];
+    
     return 0;
+}
 }
