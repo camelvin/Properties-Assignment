@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Appliance : NSObject
-@property (copy)NSString *prodctname;
-@property int vault;
+@property (copy,nonatomic)NSString *prodctname;
+@property (nonatomic) int vault;
 
 
 -(void)product;

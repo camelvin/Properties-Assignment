@@ -11,13 +11,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Appliance *firstProduct =[[Appliance alloc]init];
-       [firstProduct setProdctname:@"Oven"];
-        [firstProduct setVault:35];
-        
-        [firstProduct product];
-        [firstProduct voltage];
-    
+        Appliance *a =[[Appliance alloc]init];
+        NSLog(@"%@",a);
+        [a setValue:@"Oven" forKey:@"prodctname"];
+        [a setVault:35];
+     
+        NSLog(@"the product name is  %@",[a valueForKey:@"prodctname"]);
+              }
     return 0;
-}
+
 }

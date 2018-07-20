@@ -11,7 +11,7 @@
 @implementation Appliance
 
 -(void)product {
-    NSLog(@"the product is %@",_prodctname);
+    
 }
 -(void)voltage{
     NSLog(@"The voltage is %i",_vault);
